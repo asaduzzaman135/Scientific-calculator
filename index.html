@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+</head>
+<body>
+  <div class="container float-center text-danger p-3" id="heading">
+    <h1 class="text-center bg-primary pb-2"  >Scientific Calculator</h1>
+    <p class="text-center bg-primary pb-1 text-white">designed and Programmed  by S M Asaduzzaman</p>
+  </div> 
+ 
+<div class="calculator">
+   <form action="" name="form">
+    <input type="text" value="" class="form-control main-bar" id="inp" name="display" placeholder="0" >
+  </form>
+  <div class="button-area">
+    <div class="line">
+      <input type="button" name="btn" value="7" class="btn btn-info" onclick="calculate(this.value)">
+      <input type="button" name="btn" value="8" class="btn btn-info" onclick="calculate(this.value)">
+      <input type="button" name="btn" value="9" class="btn btn-info" onclick="calculate(this.value)">
+      <input type="button" name="btn" value="+" class="btn btn-primary" onclick="calculate(this.value)">
+    </div>
+    <div class="line">
+      <input type="button" name="btn" value="4" class="btn btn-info" onclick="calculate(this.value)">
+      <input type="button" name="btn" value="5" class="btn btn-info" onclick="calculate(this.value)">
+      <input type="button" name="btn" value="6" class="btn btn-info" onclick="calculate(this.value)">
+      <input type="button" name="btn" value="-" class="btn btn-primary" onclick="calculate(this.value)">
+    </div>
+    <div class="line">
+      <input type="button" name="btn" value="1" class="btn btn-info" onclick="calculate(this.value)">
+      <input type="button" name="btn" value="2" class="btn btn-info" onclick="calculate(this.value)">
+      <input type="button" name="btn" value="3" class="btn btn-info" onclick="calculate(this.value)">
+      <input type="button" name="btn" value="*" class="btn btn-primary" onclick="calculate(this.value)">
+    </div>
+    <div class="line">
+      <input type="button" name="btn" value="0" class="btn btn-info" onclick="calculate(this.value)">
+      <input type="button" name="btn" value="00" class="btn btn-info" onclick="calculate(this.value)">
+      <input type="button" name="btn" value="." class="btn btn-info" onclick="calculate(this.value)">
+      <input type="button" name="btn" value="/" class="btn btn-primary" onclick="calculate(this.value)">
+    </div>
+    <div class="line">
+      <input type="button" name="btn" value="!" class="btn btn-primary" onclick="fact()">
+      <input type="button" name="btn" value="e^x" class="btn btn-primary" onclick="expa()">
+      <input type="button" name="btn" value="C" class="btn btn-primary" onclick="can(null)">
+      <input type="button" name="btn" value="=" class="btn btn-primary" onclick="calc()">
+    </div>
+    <div class="line">
+      <input type="button" name="btn" value="log" class="btn btn-primary" onclick="loga()">
+      <input type="button" name="btn" value="sin" class="btn btn-primary" onclick="sina()">
+      <input type="button" name="btn" value="cos" class="btn btn-primary" onclick="cosa()">
+      <input type="button" name="btn" value="tan" class="btn btn-primary" onclick="tana()">
+    </div>
+    <div class="line">
+      <input type="button" name="btn" value="Sqrt" class="btn btn-primary" onclick="sqrta()">
+      <input type="button" name="btn" value="cosec" class="btn btn-primary" onclick="coseca()">
+      <input type="button" name="btn" value="sec" class="btn btn-primary" onclick="seca()">
+      <input type="button" name="btn" value="cot" class="btn btn-primary" onclick="cota()">
+    </div>
+  </div>
+ 
+</div>
+
+<script src="js/functions.js"></script>
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
